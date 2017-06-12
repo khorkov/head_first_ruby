@@ -1,0 +1,45 @@
+class Bird
+
+  def talk(name)
+    puts "#{name} says Chirp! Chirp!"
+  end
+
+  def move(name, destionation)
+    puts "#{name} flies to the #{destionation}."
+  end
+
+end
+
+class Dog
+
+  def talk(name)
+    puts "#{name} says Bark!"
+  end
+
+  def move(name, destionation)
+    puts "#{name} runs to the #{destionation}."
+  end
+
+end
+
+class Cat
+
+  def talk(name)
+    puts "#{name} says Meow"
+  end
+
+  def move(name, destionation)
+    puts "#{name} runs to the #{destionation}."
+  end
+
+end
+
+dog = Dog.new
+dog_name = "Lucy"
+dog.talk(dog_name)
+dog.move(dog_name, "fence")
+
+cat = Cat.new
+cat_name = "Fluffy"
+cat.talk(cat_name)
+cat.move(cat_name, "litter box")
