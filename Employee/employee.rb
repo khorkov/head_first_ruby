@@ -1,16 +1,19 @@
 class Employee
+
   attr_reader :name
 
   def name=(name)
-    raise "Name can't be blank!" if name == ''
+    if name == ""
+      raise "Name can't be blank!"
+  end
     @name = name
   end
 
-  def initialize(name = 'Anonymous')
+  def initialize(name = "Anonymous")
     self.name = name
   end
 
   def print_name
     puts "Name #{name}"
   end
- end
+end
